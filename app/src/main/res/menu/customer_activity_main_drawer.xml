@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cust_nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/cust_nav_profile"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/profile" />
+       <item
+           android:id="@+id/cust_nav_history"
+           android:icon="@drawable/ic_baseline_history_24"
+           android:title="@string/history"/>
+        <item
+            android:id="@+id/cust_nav_about_us"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/about_us" />
+
+        <item
+            android:id="@+id/cust_nav_help_and_feedback"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="@string/help_and_feedback"/>
+    </group>
+</menu>

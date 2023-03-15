@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WorkerProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/imageLinear"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#FF000000"
+            android:id="@+id/w_prof_image"
+            app:civ_border_width="2dp"
+            android:src="@drawable/profile"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/change_profile"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/w_prof_change"
+            android:textSize="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/textLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/imageLinear">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/profile_name"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/_18sdp"/>
+
+        <TextView
+            android:autoSizeMaxTextSize="@dimen/_18sdp"
+            android:id="@+id/w_prof_name"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:targetApi="o" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/profile_email"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:autoSizeMaxTextSize="@dimen/_17sdp"
+                android:padding="@dimen/_5sdp"
+                android:autoSizeMinTextSize="@dimen/_8sdp"
+                android:autoSizeTextType="uniform"
+                android:id="@+id/w_prof_email"
+                android:textColor="#000"
+                android:textSize="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/service_contact"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/w_prof_contact"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/service_city"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:autoSizeTextType="uniform"
+                android:id="@+id/w_prof_city"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/profile_service"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:textSize="@dimen/_15sdp"
+                android:padding="@dimen/_5sdp"
+                android:textColor="#000"
+                android:id="@+id/w_prof_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>   <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/profile_service_charge"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/_18sdp"/>
+
+        <TextView
+            android:textSize="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#000"
+            android:id="@+id/w_prof_charge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/w_prof_edit"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textLayout"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/todo">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

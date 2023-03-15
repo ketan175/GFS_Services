@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialogue"
+    android:layout_height="@dimen/_250sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:src="@drawable/logout"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_50sdp"
+        app:tint="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/dialogue_logout"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/yes"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/yesBtn"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="#4979"
+        android:textSize="@dimen/_15sdp"
+        android:layout_weight="1"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#4979"
+        android:layout_weight="1"
+        android:text="@string/no"
+        android:id="@+id/noBtn"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

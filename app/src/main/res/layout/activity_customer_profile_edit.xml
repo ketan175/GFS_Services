@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72ADE8"
+    tools:context=".CustomerProfileEdit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/imageLinear"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#FF000000"
+            android:id="@+id/c_edit_image"
+            app:civ_border_width="2dp"
+            android:src="@drawable/profile"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"/>
+        <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Change Profile"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@android:color/background_dark"
+                    android:id="@+id/w_prof_edit"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_height="wrap_content">
+
+                </TextView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/textLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLinear"
+        android:layout_marginTop="@dimen/_50sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/profile_name"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_20sdp"/>
+
+            <EditText
+                android:hint="@string/enter_the_name"
+                android:autoSizeMaxTextSize="@dimen/_20sdp"
+                android:id="@+id/c_edit_name"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="#403B3B"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="o"
+                android:importantForAutofill="no" />
+
+        </LinearLayout><!--
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Email: "
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_20sdp"/>
+
+            <EditText
+                android:hint="abc45@gmail.com"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/w_edit_email"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:textSize="@dimen/_18sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+-->        <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/service_contact"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/_20sdp"/>
+
+        <EditText
+            android:hint="@string/enter_the_number"
+            android:inputType="phone"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/c_edit_contact"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:textColorHint="#403B3B"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/service_city"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/_20sdp"/>
+
+            <EditText
+                android:hint="@string/enter_the_city"
+                android:padding="@dimen/_5sdp"
+                android:autoSizeTextType="uniform"
+                android:id="@+id/c_edit_city"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:textColorHint="#403B3B"
+                android:layout_height="match_parent"
+                tools:targetApi="o"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/_150sdp"
+            android:gravity="center"
+            android:text="@string/save"
+            android:background="@drawable/button_design"
+            android:id="@+id/c_edit_save"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

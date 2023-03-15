@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/cardView"
+    app:cardElevation="@dimen/_72sdp"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dashboardLinearLayout"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/workerImage"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_65sdp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"/>
+        <LinearLayout
+            android:layout_width="@dimen/_200sdp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textWName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="@dimen/_20sdp"
+                android:autoSizeMaxTextSize="@dimen/_25sdp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/playfair_display_black"
+                android:textColor="#000"
+                android:text="@string/name"
+                tools:targetApi="o" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@android:color/background_dark"
+                android:layout_height="@dimen/_1sdp">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp">
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/playfair_display_black"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/service_contact"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="@dimen/_17sdp" />
+
+                <TextView
+                    android:id="@+id/textWContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/playfair_display"
+                    android:gravity="center_vertical"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_17sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="@dimen/_40sdp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:id="@+id/cityTextView"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="@string/service_city"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/playfair_display_black"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="#000"
+                        android:clickable="true"
+                        android:textColorHighlight="#000"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/playfair_display"
+                        android:id="@+id/textWCity"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_height="match_parent"
+                        android:focusable="true" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/priceTextView"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="@string/service_price"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/playfair_display_black"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="#000"
+                        android:textColorHighlight="#000"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/playfair_display"
+                        android:focusable="true"
+                        android:id="@+id/textWPrice"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_height="match_parent"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

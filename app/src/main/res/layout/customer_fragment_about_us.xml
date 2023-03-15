@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CAE0F1"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/about_details1"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/text1"
+        android:padding="@dimen/_5sdp"
+        android:textColor="#000"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/text1"
+        android:text="@string/about_details2"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#000"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</RelativeLayout>
